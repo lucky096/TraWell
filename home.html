@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<title>Registration</title>
+		<meta name="generator" content="Bootply" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<!--[if lt IE 9]>
+			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<link href="css/styles.css" rel="stylesheet">
+
+		 <!-- Plugin CSS -->
+    <link rel="stylesheet" href="startbootstrap-creative-1.0.0/css/animate.min.css" type="text/css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="startbootstrap-creative-1.0.0/css/creative.css" type="text/css">
+	</head>
+	<body background="project/img/header.jpg">
+<!--login modal-->
+<div id="loginModal" class="modal show" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog">
+  <div class="modal-content">
+      <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+          <h1 class="text-center">Create Your Profile</h1>
+      </div>
+      <div class="modal-body">
+          <form action="login.php" method="post" class="form col-md-12 center-block">
+		  <div class="form-group">
+              <input type="text" name="u_name" class="form-control input-lg" placeholder="Username">
+            </div>
+            <div class="form-group">
+              <input type="text" name="email" class="form-control input-lg" placeholder="Email">
+            </div>
+            <div class="form-group">
+              <input type="password" name="password" class="form-control input-lg" placeholder="Password">
+            </div>
+			<div class="form-group">
+              <input type="password" name="confirm_password" class="form-control input-lg" placeholder="Confirm Password">
+            </div>
+			<div class="form-group">
+              <input type="text" name="name" class="form-control input-lg" placeholder="Full Name">
+            </div>
+			<div class="form-group">
+			<select name="gender" class="form-control input-lg" placeholder="gender">
+				<option value ="M">Male</option>
+				<option value ="F">Female</option>
+				<option value ="O">Other</option>
+			</select>
+			</div>
+			<div class="form-control input-sm"> Date of Birth </div>
+			<div class="form-group">
+              <input type="date" name="dob" class="form-control input-lg" placeholder="Date of Birth">
+            </div>
+			<div class="form-group">
+			<select name="state" class="form-control input-lg" placeholder="State">
+				<option value ="Gujarat">Gujarat</option>
+				<option value="Maharashtra">Maharashtra</option>
+				<option value="Rajasthan">Rajasthan</option>
+				<option value="Bihar">Bihar</option>
+				<option value="Himachal Pradesh">Himachal Pradesh</option>
+				<option value="Uttarakhand">Uttarakhand</option>
+				<option value="Uttar Pradesh">Uttar Pradesh</option>
+				<option value="Haryana">Haryana</option>
+				<option value="Madhya Pradesh">Madhya Pradesh</option>
+				<option value="Orissa">Orissa</option>
+				<option value="Jharkhand">Jharkhand</option>
+				<option value="Chattisgarh">Chattisgarh</option>
+				<option value="West Bengal">West Bengal</option>
+				<option value="Tamil Nadu">Tamil Nadu</option>
+				<option value="Kerala">Kerela</option>
+				<option value="Andhra Pradesh">Andhra Pradesh</option>
+				<option value="Telengana">Telengana</option>
+				<option value="Karnataka">Karnataka</option>
+				<option value="Assam">Assam</option>
+				<option value="Arunachal Pradesh">Arunachal Pradesh</option>
+			</select>
+            </div>
+			<div class="form-group">
+              <input type="text" name="city" class="form-control input-lg" placeholder="City">
+            </div>
+			<!--<div class="form-control input-sm"> Interests </div>
+			<div class="form-group">
+			<select multiple name="interests" class="form-control input-lg" style="height:75px; line-height:46px" placeholder="Interests">
+				<option value="Sports">Sports</option>
+				<option value="Movies">Movies</option>
+				<option value="Adventure">Adventure</option>
+				<option value="Music">Music</option>
+				<option value="Heritage Sites">Heritage Sites</option>
+				<option value="Literature">Literature</option>
+				<option value="Folklore">Folklore</option>
+				<option value="Video Games">Video Games</option>
+				<option value="Politics">Politics</option>
+			</select>
+            </div>-->
+			<script>
+			function alerts() {
+				alert("You have successfully registered. Please login.");
+			}
+			</script>
+            <div class="form-group">
+              <input type="submit" name="cmd" value="Sign Up" class="btn btn-primary btn-xl btn-block" onclick="alerts()">
+              <span class="pull-right"><a href="startbootstrap-creative-1.0.0/index.html">Log In</a></span><span><a href="startbootstrap-creative-1.0.0/index.html">Already Registered?</a></span>
+            </div>
+          </form>
+      </div>
+      <div class="modal-footer">
+          <div class="col-md-12">
+          <!--<button class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button>-->
+		  </div>	
+      </div>
+  </div>
+  </div>
+</div>
+	<!-- script references -->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+	</body>
+</html>
